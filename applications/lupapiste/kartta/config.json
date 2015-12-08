@@ -953,6 +953,7 @@
   "planbundle":{
     "conf":{
       "urbanPlans":false,
+	  "urbanPlansTrimble":false,
       "urbanPlansLiiteri":true,
       "generalPlans":true
     }

@@ -1,11 +1,11 @@
 jQuery(document).ready(function() {
   
 	jQuery("#avaa").click(function() {
-		window.open("fullmap.html?coord=404241_6693842&zoomLevel=10&municipality=" + jQuery("#municipality").val());
+		window.open("fullmap.html?coord=286643_6700636&zoomLevel=10&municipality=" + jQuery("#municipality").val());
 		return false;
 	});
 	jQuery("#full").click(function() {
-	  window.open("../build/package/resources/public/oskari/fullmap.html?coord=404241_6693842&zoomLevel=10&build=" + Date.now() + "&municipality=" + jQuery("#municipality").val());
+	  window.open("../build/package/resources/public/oskari/fullmap.html?coord=286643_6700636&zoomLevel=10&build=" + Date.now() + "&municipality=" + jQuery("#municipality").val());
 	  return false;
 	});
 	hub.subscribe("oskari-map-initialized", function(e) {

@@ -152,8 +152,14 @@ jQuery(document).ready(function() {
                 break;
             }
         }
+        jQuery.each(wmsLayers,function(i,obj) {
+		if (obj.wmsName == municipality+"_asemakaavaindeksiTrimble") {
+            appConfig.planbundle.conf.urbanPlansTrimble = true;
+        }
+		});
+
       }
-      
+
 			app.setConfiguration(appConfig);
 			app.startApplication(function(startupInfos) {
 

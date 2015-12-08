@@ -107,6 +107,9 @@ function(instance) {
     if(this.instance.urbanPlans) {
       this.searchUrban(x,y);
     }
+	 if(this.instance.urbanPlansTrimble) {
+      this.searchUrbanTrimble(x,y);
+    }
     if(this.instance.urbanPlansLiiteri) {
       this.searchUrbanLiiteri(x,y);
     }
@@ -221,8 +224,58 @@ function(instance) {
         cel.append(me.instance.getLocalization('flyout').error);
       }
     });
+  }, searchUrbanTrimble : function(x, y) {
+    var container = jQuery(this.container);
+    var urbanContainer = jQuery('<div id="urbanPlans"><h4>' + this.instance.getLocalization('flyout').titleUrban + '</h4></div>');
+    container.append(urbanContainer);
+    var cel = jQuery('<div id="urbanPlanResults"></div>');
+    urbanContainer.append(cel);
+    cel.append(this.instance.getLocalization('flyout').searchingUrban + "</br>");
+    cel.append('<img src="' + Oskari.app.appConfig.lupakartta.conf.ajaxloader + '" />');
+    jQuery.ajax({
+      url : Oskari.app.appConfig.lupakartta.conf.ajaxurl + "/trimble-kaavamaaraykset-by-point",
+      data : {
+        "x" : x,
+        "y" : y,
+        "municipality" : Oskari.app.appConfig.lupakartta.conf.municipality
+      },
+      dataType : "json",
+      success : function(data) {
+        cel.empty();
+        var content = "";
+        if (data.length > 0 && data[1].length >0) {
+          content = content + "<table>";
+         // content = content + "<tr><td>" + me.instance.getLocalization('flyout').id + "</td><td>" + me.instance.getLocalization('flyout').link + "</td></tr>";
+		  
+		  $.each(data[0], function( key, value ) {
+            content = content + "<tr>";
+            content = content + "<td>" + key + "</td>";
+            content = content + "<td>" + value + "</td>";
+            content = content + "</tr>";
+		  });
+
+		  content = content + "</table> <a href='#' onclick='jQuery(\"#divtrimblemaaraykset\").css(\"display\", \"block\");'>"+me.instance.getLocalization('flyout').titleUrban+"</a>";
+		  
+		  content = content + "<div id='divtrimblemaaraykset' style='background-color: white; display:none; width:430px; height:200px; overflow:auto;'><table style='width:400px'>";
+          for ( var item in data[1]) {
+            content = content + "<tr>";
+            content = content + "<td><img src='" + data[1][item].pic + "' style='zoom: 50%;'></td>";
+            content = content + "<td>" + data[1][item].desc + "</td>";
+            content = content + "</tr>";
+          }
+          content = content + "</table></div>";
+          cel.append(content);
+        } else {
+          cel.empty();
+          cel.append(me.instance.getLocalization('flyout').notfound);
+        }
+      },
+      error : function(err) {
+        cel.empty();
+        cel.append(me.instance.getLocalization('flyout').error);
+      }
+    });
   },
-  
   searchUrbanLiiteri : function(x, y) {
     var container = jQuery(this.container);
     var urbanContainer = jQuery('<div id="urbanPlansLiiteri"><h4>' + this.instance.getLocalization('flyout').titleUrbanLiiteri + '</h4></div>');

@@ -19,6 +19,7 @@ function() {
     this.isActive = false;
     
     this.urbanPlans = false;
+	this.urbanPlansTrimble = false;
     this.urbanPlansLiiteri = false;
     this.generalPlans = false;
 
@@ -133,10 +134,11 @@ function() {
         var sandbox = Oskari.getSandbox(sandboxName);
         this.sandbox = sandbox;
         this.urbanPlans = conf.urbanPlans || sandbox._modulesByName["lupakartta"].conf.municipality === "491";
+		this.urbanPlansTrimble = conf.urbanPlansTrimble;
         this.urbanPlansLiiteri = conf.urbanPlansLiiteri;
         this.generalPlans = conf.generalPlans;
         
-        if(this.generalPlans || this.urbanPlans || this.urbanPlansLiiteri) {
+        if(this.generalPlans || this.urbanPlans || this.urbanPlansLiiteri ||  this.urbanPlansTrimble) {
           this.localization = Oskari.getLocalization(this.getName());
   
           // register to sandbox as a module
