@@ -51,7 +51,7 @@ Oskari.clazz.define('Oskari.mapframework.bundle.printout.view.StartView',
 
             this.alert.insertTo(container);
 
-            var isMaxLayersExceeded = this._isTooManyLayers();
+            var isMaxLayersExceeded = false; //this._isTooManyLayers();
             var isManyLayersExceeded = this._isManyLayers();
 
             if (isMaxLayersExceeded) {

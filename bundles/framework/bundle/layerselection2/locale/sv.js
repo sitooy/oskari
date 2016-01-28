@@ -6,9 +6,9 @@ Oskari.registerLocalization({
     "desc": "",
     "layer": {
       "style": "Stil",
-      "show": "Visa",
-      "hide": "Göm",
-      "hidden": "Kartan är tillfälligt gömd.",
+      "show": "Visa kartlager",
+      "hide": "Göm kartlager",
+      "hidden": "",
       "out-of-scale": "Data som ingår i detta kartlager kan inte visas på den valda skalnivån.",
       "move-to-scale": "Gå till en lämplig skalnivå.",
       "out-of-content-area": "Detta kartlager saknar innehåll vid dessa koordinater.",

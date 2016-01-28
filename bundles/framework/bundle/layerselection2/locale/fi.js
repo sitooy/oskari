@@ -6,9 +6,9 @@ Oskari.registerLocalization({
     "desc": "",
     "layer": {
       "style": "Tyyli",
-      "show": "Näytä",
-      "hide": "Piilota",
-      "hidden": "Karttataso on tilapäisesti piilotettu.",
+      "show": "Näytä karttataso",
+      "hide": "Piilota karttataso",
+      "hidden": "",
       "out-of-scale": "Tämän karttatason aineistoa ei voida näyttää valitulla mittakaavatasolla.",
       "move-to-scale": "Siirry sopivalle mittakaavatasolle",
       "out-of-content-area": "Tällä karttatasolla ei ole aineistoa tässä sijainnissa",
