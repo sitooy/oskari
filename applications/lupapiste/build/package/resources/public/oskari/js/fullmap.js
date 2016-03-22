@@ -98,6 +98,10 @@ jQuery(document).ready(function() {
 	  //add layers based on response from the server
 	  for (var i = 0; i < wmsLayers.length; i++) {
 		var wmsLayer = wmsLayers[i];
+		if (!wmsLayer.wmsUrl) {
+			continue;
+		}
+
 		//clone the template
 		var layerTemplate = JSON.parse(JSON.stringify(appConfig.mapfull.conf.template));
 		
