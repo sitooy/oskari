@@ -133,7 +133,7 @@ function() {
         var sandboxName = ( conf ? conf.sandbox : null ) || 'sandbox' ;
         var sandbox = Oskari.getSandbox(sandboxName);
         this.sandbox = sandbox;
-        this.urbanPlans = conf.urbanPlans || sandbox._modulesByName["lupakartta"].conf.municipality === "491";
+        this.urbanPlans = conf.urbanPlans || sandbox._modulesByName["lupakartta"].conf.municipality === "491" || sandbox._modulesByName["lupakartta"].conf.municipality === "908";
 		this.urbanPlansTrimble = conf.urbanPlansTrimble;
         this.urbanPlansLiiteri = conf.urbanPlansLiiteri;
         this.generalPlans = conf.generalPlans;

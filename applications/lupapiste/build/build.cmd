@@ -866,6 +866,20 @@ type "..\..\..\bundles\lupapiste\bundle\planbundle\locale\fi.js" >> oskarimap.js
 echo ; >> oskarimap.js
 type "..\..\..\bundles\lupapiste\bundle\planbundle\locale\sv.js" >> oskarimap.js
 echo ; >> oskarimap.js
+type "..\..\..\packages\lupapiste\bundle\buildingconventionsearch\bundle.js" >> oskarimap.js
+echo ; >> oskarimap.js
+type "..\..\..\bundles\lupapiste\bundle\buildingconventionsearch\Flyout.js" >> oskarimap.js
+echo ; >> oskarimap.js
+type "..\..\..\bundles\lupapiste\bundle\buildingconventionsearch\instance.js" >> oskarimap.js
+echo ; >> oskarimap.js
+type "..\..\..\bundles\lupapiste\bundle\buildingconventionsearch\Tile.js" >> oskarimap.js
+echo ; >> oskarimap.js
+type "..\..\..\bundles\lupapiste\bundle\buildingconventionsearch\locale\en.js" >> oskarimap.js
+echo ; >> oskarimap.js
+type "..\..\..\bundles\lupapiste\bundle\buildingconventionsearch\locale\fi.js" >> oskarimap.js
+echo ; >> oskarimap.js
+type "..\..\..\bundles\lupapiste\bundle\buildingconventionsearch\locale\sv.js" >> oskarimap.js
+echo ; >> oskarimap.js
 
 rem del oskarimap.css
 rem type "..\..\..\applications\lupapiste\css\icons.css" >> oskarimap.css
@@ -907,9 +921,9 @@ rem type "..\..\..\resources\lupapiste\bundle\lupakartta\css\lupakartta.css" >> 
 rem type "..\..\..\resources\framework\bundle\printout\css\style.css" >> oskarimap.css
 rem type "..\..\..\resources\framework\bundle\userguide\css\style.css" >> oskarimap.css
 
-"C:\Program Files (x86)\Microsoft\Microsoft Ajax Minifier\ajaxmin" -evals:safeall -rename:none -fnames:lock -clobber:true oskarimap.js -o package\resources\public\oskari\js\oskarimap.js
+rem "C:\Program Files (x86)\Microsoft\Microsoft Ajax Minifier\ajaxmin" -evals:safeall -rename:none -fnames:lock -clobber:true oskarimap.js -o package\resources\public\oskari\js\oskarimap.js
 copy /y oskarimap.css package\resources\public\oskari\css\
-
+copy /y oskarimap.js package\resources\public\oskari\js\
 cd package
 
 lein.bat install

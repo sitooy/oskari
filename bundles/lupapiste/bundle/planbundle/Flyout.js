@@ -119,6 +119,7 @@ function(instance) {
   },
   
   searchGeneral : function(x,y) {
+    var me = this;
     var container = jQuery(this.container);
     var generalContainer = jQuery('<div id="generalPlans"><h4>' + this.instance.getLocalization('flyout').titleGeneral + '</h4></div>');
     container.append(generalContainer);
@@ -185,6 +186,7 @@ function(instance) {
   },
   
   searchUrban : function(x, y) {
+    var me = this;
     var container = jQuery(this.container);
     var urbanContainer = jQuery('<div id="urbanPlans"><h4>' + this.instance.getLocalization('flyout').titleUrban + '</h4></div>');
     container.append(urbanContainer);
@@ -224,7 +226,9 @@ function(instance) {
         cel.append(me.instance.getLocalization('flyout').error);
       }
     });
-  }, searchUrbanTrimble : function(x, y) {
+  },
+  searchUrbanTrimble : function(x, y) {
+    var me = this;
     var container = jQuery(this.container);
     var urbanContainer = jQuery('<div id="urbanPlans"><h4>' + this.instance.getLocalization('flyout').titleUrban + '</h4></div>');
     container.append(urbanContainer);
@@ -277,6 +281,7 @@ function(instance) {
     });
   },
   searchUrbanLiiteri : function(x, y) {
+    var me = this;
     var container = jQuery(this.container);
     var urbanContainer = jQuery('<div id="urbanPlansLiiteri"><h4>' + this.instance.getLocalization('flyout').titleUrbanLiiteri + '</h4></div>');
     container.append(urbanContainer);

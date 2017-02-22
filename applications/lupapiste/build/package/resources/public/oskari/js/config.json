@@ -1034,5 +1034,9 @@
       "urbanPlansLiiteri":true,
       "generalPlans":true
     }
+  },
+  "buildingconventionsearch":{
+    "conf":{
+    }
   }
 }
