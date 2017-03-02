@@ -921,9 +921,9 @@ rem type "..\..\..\resources\lupapiste\bundle\lupakartta\css\lupakartta.css" >> 
 rem type "..\..\..\resources\framework\bundle\printout\css\style.css" >> oskarimap.css
 rem type "..\..\..\resources\framework\bundle\userguide\css\style.css" >> oskarimap.css
 
-rem "C:\Program Files (x86)\Microsoft\Microsoft Ajax Minifier\ajaxmin" -evals:safeall -rename:none -fnames:lock -clobber:true oskarimap.js -o package\resources\public\oskari\js\oskarimap.js
+"C:\Program Files (x86)\Microsoft\Microsoft Ajax Minifier\ajaxmin" -evals:safeall -rename:none -fnames:lock -clobber:true oskarimap.js -o package\resources\public\oskari\js\oskarimap.js
 copy /y oskarimap.css package\resources\public\oskari\css\
-copy /y oskarimap.js package\resources\public\oskari\js\
+
 cd package
 
 lein.bat install
