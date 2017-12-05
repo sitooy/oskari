@@ -18,3 +18,4 @@ tools/test-results.xml
 *.zip
 *.tgz
 *.tar.gz
+*.orig
