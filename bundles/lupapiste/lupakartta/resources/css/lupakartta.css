@@ -1,0 +1,21 @@
+.lupakartta-close {
+    color: white;
+    font-family: Arial,Helvetica;
+		font-weight: bold;
+		font-size: 11px;
+		text-align: left;
+		text-transform: uppercase;
+		padding: 2px;
+}
+
+.myplaces-draw-circle {
+	width: 32px;
+	height: 32px;
+	background: url('../img/draw-circle.png');
+}
+
+.myplaces-draw-ellipse {
+	width: 32px;
+	height: 32px;
+	background: url('../img/draw-ellipse.png');
+}

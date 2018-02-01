@@ -57,34 +57,7 @@ Oskari.clazz.define("Oskari.mapframework.event.map.layer.Bundle",
         "protocol": ["Oskari.bundle.Bundle"],
         "source": {
 
-            "scripts": [
-                /**
-                 * map-layer
-                 */
-                {
-                    "type": "text/javascript",
-                    "src": "../../../../sources/framework/event/common/after-rearrange-selected-map-layer-event.js"
-                }, {
-                    "type": "text/javascript",
-                    "src": "../../../../sources/framework/event/common/after-change-map-layer-opacity-event.js"
-                }, {
-                    "type": "text/javascript",
-                    "src": "../../../../sources/framework/event/common/after-change-map-layer-style-event.js"
-                }, {
-                    "type": "text/javascript",
-                    "src": "../../../../sources/framework/event/common/after-highlight-map-layer-event.js"
-                }, {
-                    "type": "text/javascript",
-                    "src": "../../../../sources/framework/event/common/after-dim-map-layer-event.js"
-                }
-                /*
-         removed in 7.4,
-         {
-         "type" : "text/javascript",
-         "src" : "../../../../sources/framework/event/common/after-remove-highlight-map-layer-event.js"
-         }*/
-
-            ],
+            "scripts": [],
             "resources": []
         },
         "bundle": {

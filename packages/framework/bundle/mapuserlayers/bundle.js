@@ -18,33 +18,33 @@ Oskari.clazz.define(
         "source": {
             "scripts": [{
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/myplacesimport/domain/UserLayer.js"
+                "src": "../../../../bundles/mapping/mapuserlayers/domain/UserLayer.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/myplacesimport/domain/UserLayerModelBuilder.js"
+                "src": "../../../../bundles/mapping/mapuserlayers/domain/UserLayerModelBuilder.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/myplacesimport/plugin/UserLayersLayerPlugin.js"
+                "src": "../../../../bundles/mapping/mapuserlayers/plugin/UserLayersLayerPlugin.ol2.js"
             }],
 
             "locales": [{
                 "lang": "fi",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/myplacesimport/locale/fi.js"
+                "src": "../../../../bundles/framework/myplacesimport/resources/locale/fi.js"
             }, {
                 "lang": "sv",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/myplacesimport/locale/sv.js"
+                "src": "../../../../bundles/framework/myplacesimport/resources/locale/sv.js"
             }, {
                 "lang": "en",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/myplacesimport/locale/en.js"
+                "src": "../../../../bundles/framework/myplacesimport/resources/locale/en.js"
             }]
         },
         "bundle": {
             "manifest": {
-                "Bundle-Identifier": "mapanalysis",
-                "Bundle-Name": "mapanalysis",
+                "Bundle-Identifier": "mapuserlayers",
+                "Bundle-Name": "mapuserlayers",
                 "Bundle-Tag": {
                     "mapframework": true
                 },
@@ -67,8 +67,8 @@ Oskari.clazz.define(
                 }],
                 "Bundle-Name-Locale": {
                     "fi": {
-                        "Name": "Analysis",
-                        "Title": "Analysis"
+                        "Name": "Userlayers",
+                        "Title": "UserLayers"
                     },
                     "en": {}
                 },

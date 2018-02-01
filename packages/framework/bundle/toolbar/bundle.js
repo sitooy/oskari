@@ -20,128 +20,151 @@ Oskari.clazz.define("Oskari.mapframework.bundle.toolbar.ToolbarBundle", function
 
             "scripts": [{
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/instance.js"
+                "src": "../../../../bundles/mapping/toolbar/instance.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/button-methods.js"
+                "src": "../../../../bundles/mapping/toolbar/button-methods.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/default-buttons.js"
+                "src": "../../../../bundles/mapping/toolbar/default-buttons.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/AddToolButtonRequest.js"
+                "src": "../../../../bundles/mapping/toolbar/request/AddToolButtonRequest.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/RemoveToolButtonRequest.js"
+                "src": "../../../../bundles/mapping/toolbar/request/RemoveToolButtonRequest.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/ToolButtonStateRequest.js"
+                "src": "../../../../bundles/mapping/toolbar/request/ToolButtonStateRequest.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/SelectToolButtonRequest.js"
+                "src": "../../../../bundles/mapping/toolbar/request/SelectToolButtonRequest.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/ToolButtonRequestHandler.js"
+                "src": "../../../../bundles/mapping/toolbar/request/ToolButtonRequestHandler.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/ShowMapMeasurementRequestHandler.js"
+                "src": "../../../../bundles/mapping/toolbar/request/ShowMapMeasurementRequestHandler.ol2.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/event/ToolSelectedEvent.js"
+                "src": "../../../../bundles/mapping/toolbar/event/ToolSelectedEvent.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/ToolbarRequest.js"
+                "src": "../../../../bundles/mapping/toolbar/event/ToolbarLoadedEvent.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/request/ToolbarRequestHandler.js"
+                "src": "../../../../bundles/mapping/toolbar/request/ToolbarRequest.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/toolbar/request/ToolbarRequestHandler.js"
             }, {
                 "type": "text/css",
-                "src": "../../../../resources/framework/bundle/toolbar/css/toolbar.css"
+                "src": "../../../../bundles/mapping/toolbar/resources/css/toolbar.css"
             }],
             "locales": [{
-                "lang": "am",
+                "lang": "hy",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/am.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/hy.js"
             }, {
                 "lang": "cs",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/cs.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/cs.js"
             }, {
                 "lang": "da",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/da.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/da.js"
             }, {
                 "lang": "de",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/de.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/de.js"
             }, {
                 "lang": "en",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/en.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/en.js"
             }, {
                 "lang": "es",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/es.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/es.js"
             }, {
                 "lang": "et",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/et.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/et.js"
             }, {
                 "lang": "fi",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/fi.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/fi.js"
+            }, {
+                "lang": "fr",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/fr.js"
             }, {
                 "lang": "hr",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/hr.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/hr.js"
             }, {
                 "lang": "hu",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/hu.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/hu.js"
+            }, {
+                "lang": "is",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/is.js"
+            }, {
+                "lang": "it",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/it.js"
             }, {
                 "lang": "lv",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/lv.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/lv.js"
+            }, {
+                "lang": "nb",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/nb.js"
             }, {
                 "lang": "nl",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/nl.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/nl.js"
+            }, {
+                "lang": "nn",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/nn.js"
             }, {
                 "lang": "pl",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/pl.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/pl.js"
             }, {
                 "lang": "pt",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/pt.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/pt.js"
             }, {
                 "lang": "ro",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/ro.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/ro.js"
             }, {
-                "lang": "rs",
+                "lang": "sr",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/rs.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/sr.js"
             }, {
                 "lang": "sl",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/sl.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/sl.js"
             }, {
                 "lang": "sk",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/sk.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/sk.js"
             }, {
                 "lang": "sq",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/sq.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/sq.js"
             }, {
                 "lang": "sv",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/sv.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/sv.js"
             }, {
                 "lang": "uk",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/toolbar/locale/uk.js"
+                "src": "../../../../bundles/mapping/toolbar/resources/locale/uk.js"
             }]
         },
         "bundle": {

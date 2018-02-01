@@ -1,230 +1,335 @@
 {
-    "startupSequence": [{      
-            "bundleinstancename": "oskariui",
+    "startupSequence": [
+        {
+            "bundlename": "elf-lang-overrides",
+            "metadata": {
+                "Import-Bundle": {
+                    "elf-lang-overrides": {
+                        "bundlePath": "../../../packages/elf/bundle/"
+                    }
+                }
+            }
+        },
+        {
             "bundlename": "oskariui",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
                     "oskariui": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
-        }, {         
-            "bundleinstancename": "openlayers-default-theme",
+        }, {
             "bundlename": "openlayers-default-theme",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
                     "openlayers-default-theme": {
                         "bundlePath": "../../../packages/openlayers/bundle/"
                     },
-                    "openlayers-2_13_1-full-map": {
+                    "openlayers-full-map": {
                         "bundlePath": "../../../packages/openlayers/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         },
-
-        {        
-            "bundleinstancename": "mapfull",
+        {
             "bundlename": "mapfull",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
-
-                    "core-base": {
+                    "mapwmts": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
-                    "core-map": {
+                    "mapwfs2": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
-                    "domain": {
+                    "mapmyplaces": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
-                    "event-base": {
+                    "mapuserlayers": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
-                    "event-map": {
-                        "bundlePath": "../../../packages/framework/bundle/"
+                    "maparcgis": {
+                        "bundlePath": "../../../packages/arcgis/bundle/"
                     },
-                    "event-map-layer": {
+                    "mapmodule-plugin": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
                     "mapfull": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
-                    "mapmodule-plugin": {
+                    "ui-components": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
-                    "mapwmts": {
+                    "mapanalysis": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     },
-                    "request-base": {
-                        "bundlePath": "../../../packages/framework/bundle/"
-                    },
-                    "request-map": {
-                        "bundlePath": "../../../packages/framework/bundle/"
-                    },
-                    "request-map-layer": {
-                        "bundlePath": "../../../packages/framework/bundle/"
-                    },
-                    "sandbox-base": {
-                        "bundlePath": "../../../packages/framework/bundle/"
-                    },
-                    "sandbox-map": {
-                        "bundlePath": "../../../packages/framework/bundle/"
-                    },
-                    "service-base": {
-                        "bundlePath": "../../../packages/framework/bundle/"
-                    },
-                    "service-map": {
-                        "bundlePath": "../../../packages/framework/bundle/"
-                    },
-                    "mapwfs2": {
+                    "mapstats": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
 
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "divmanazer",
             "bundlename": "divmanazer",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
                     "divmanazer": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-             "bundleinstancename": "toolbar",
             "bundlename": "toolbar",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
                     "toolbar": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "search",
+            "bundlename": "statehandler",
+            "metadata": {
+                "Import-Bundle": {
+                    "statehandler": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "infobox",
+            "metadata": {
+                "Import-Bundle": {
+                    "infobox": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
             "bundlename": "search",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
                     "search": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "layerselector2",
+            "bundlename": "metadatacatalogue",
+            "metadata": {
+                "Import-Bundle": {
+                    "metadatacatalogue": {
+                        "bundlePath": "../../../packages/catalogue/bundle/"
+                    }
+                }
+            }
+        }, {
             "bundlename": "layerselector2",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
                     "layerselector2": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "layerselection2",
             "bundlename": "layerselection2",
-            "instanceProps": {},
             "metadata": {
                 "Import-Bundle": {
                     "layerselection2": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "instanceProps": {},
-            "title": "ELF",
-            "bundleinstancename": "elf-language-selector",
+            "bundlename": "personaldata",
+            "metadata": {
+                "Import-Bundle": {
+                    "personaldata": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "publisher2",
+            "metadata": {
+                "Import-Bundle": {
+                    "publisher2": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "coordinatedisplay",
+            "metadata": {
+                "Import-Bundle": {
+                    "coordinatedisplay": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "maplegend",
+            "metadata": {
+                "Import-Bundle": {
+                    "maplegend": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "userguide",
+            "metadata": {
+                "Import-Bundle": {
+                    "userguide": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "metadataflyout",
+            "metadata": {
+                "Import-Bundle": {
+                    "metadataflyout": {
+                        "bundlePath": "../../../packages/elf/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "featuredata2",
+            "metadata": {
+                "Import-Bundle": {
+                    "featuredata2": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "myplaces2",
+            "metadata": {
+                "Import-Bundle": {
+                    "myplaces2": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "postprocessor",
+            "metadata": {
+                "Import-Bundle": {
+                    "postprocessor": {
+                        "bundlePath": "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        },      
+        {
             "bundlename": "elf-language-selector",
             "metadata": {
                 "Import-Bundle": {
                     "elf-language-selector": {
                         "bundlePath": "../../../packages/elf/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "infobox",
-            "bundlename": "infobox",
-            "instanceProps": {},
+            "bundlename": "elf-geolocator",
             "metadata": {
                 "Import-Bundle": {
-                    "infobox": {
-                        "bundlePath": "../../../packages/framework/bundle/"
+                    "elf-geolocator": {
+                        "bundlePath": "../../../packages/elf/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "statehandler",
-            "bundlename": "statehandler",
-            "instanceProps": {},
+            "bundlename": "admin-layerselector",
             "metadata": {
                 "Import-Bundle": {
-                    "statehandler": {
-                        "bundlePath": "../../../packages/framework/bundle/"
+                    "admin-layerselector": {
+                        "bundlePath": "../../../packages/integration/bundle/"
+                    },
+                    "bb": {
+                        "bundlePath": "../../../packages/integration/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "coordinatedisplay",
-            "bundlename": "coordinatedisplay",
-            "instanceProps": {},
+            "bundlename": "admin-layerrights",
+            "bundleinstancename": "admin-layerrights",
             "metadata": {
                 "Import-Bundle": {
-                    "coordinatedisplay": {
+                    "admin-layerrights": {
                         "bundlePath": "../../../packages/framework/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "bundleinstancename": "featuredata2",
-            "bundlename": "featuredata2",
-            "instanceProps": {},
+            "bundlename": "elf-license",
             "metadata": {
                 "Import-Bundle": {
-                    "featuredata2": {
-                        "bundlePath": "../../../packages/framework/bundle/"
+                    "elf-license": {
+                        "bundlePath": "../../../packages/elf/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
             }
         }, {
-            "instanceProps": {},
-            "title": "Info Box",
-            "bundleinstancename": "infobox",
-            "bundlename": "infobox",
+            "bundlename" : "findbycoordinates",
+            "metadata" : {
+                "Import-Bundle" : {
+                    "findbycoordinates" : {
+                        "bundlePath" : "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename": "elf-metadatafeedback",
             "metadata": {
                 "Import-Bundle": {
-                    "infobox": {
-                        "bundlePath": "../../../packages/framework/bundle/"
+                    "elf-metadatafeedback": {
+                        "bundlePath": "../../../packages/elf/bundle/"
                     }
-                },
-                "Require-Bundle-Instance": []
+                }
+            }
+        }, {
+            "bundlename" : "myplacesimport",
+            "metadata" : {
+                "Import-Bundle" : {
+                    "myplacesimport" : {
+                        "bundlePath" : "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename" : "coordinatetool",
+            "bundleinstancename" : "coordinatetool",
+            "metadata" : {
+                "Import-Bundle" : {
+                    "coordinatetool" : {
+                        "bundlePath" : "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        },
+        {
+            "bundlename" : "backendstatus",
+            "bundleinstancename" : "backendstatus",
+            "metadata" : {
+                "Import-Bundle" : {
+                    "backendstatus" : {
+                        "bundlePath" : "../../../packages/framework/bundle/"
+                    }
+                }
+            }
+        }, {
+            "bundlename" : "printout",
+            "bundleinstancename" : "printout",
+            "metadata" : {
+                "Import-Bundle" : {
+                    "printout" : {
+                        "bundlePath" : "../../../packages/framework/bundle/"
+                    }
+                }
             }
         }
-
     ]
 }

@@ -10,7 +10,7 @@ Oskari.clazz.define("Oskari.userinterface.bundle.ui.UserInterfaceBundle", functi
      * @method create creates an Oskari DIV Manager instance
      * @return {Oskari.userinterface.bundle.ui.UserInterfaceBundleInstance}
      */
-    "create" : function() {
+    "create": function() {
 
         return Oskari.clazz.create("Oskari.userinterface.bundle.ui.UserInterfaceBundleInstance");
     },
@@ -18,7 +18,7 @@ Oskari.clazz.define("Oskari.userinterface.bundle.ui.UserInterfaceBundle", functi
      * @method update called by the bundle manager to inform on changes in
      * bundlage
      */
-    "update" : function(manager, bundle, bi, info) {
+    "update": function(manager, bundle, bi, info) {
 
     }
 }, {
@@ -26,232 +26,810 @@ Oskari.clazz.define("Oskari.userinterface.bundle.ui.UserInterfaceBundle", functi
      * @static
      * @property protocol protocols implemented by this bundle
      */
-    "protocol" : ["Oskari.bundle.Bundle"],
-    "source" : {
+    "protocol": ["Oskari.bundle.Bundle"],
+    "source": {
         /**
          * @static
          * @property source.scripts
          *
          */
-        "scripts" : [{
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/instance.js"
+        "scripts": [{
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/instance.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Component.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/AddExtensionRequest.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/AddExtensionRequestHandler.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/RemoveExtensionRequest.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/RemoveExtensionRequestHandler.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/UpdateExtensionRequest.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/UpdateExtensionRequestHandler.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/ModalDialogRequest.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/request/ModalDialogRequestHandler.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/event/ExtensionUpdatedEvent.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/event/UIChangeEvent.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Accordion.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/AccordionPanel.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/TabContainer.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/TabDropdownContainer.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/TabPanel.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Badge.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Alert.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Popup.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/PopupService.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Overlay.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Button.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/FilterDialog.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Form.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/SearchForm.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/UIHelper.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/FormInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Popover.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Grid.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/GridSort.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/GridPaging.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/GridSelection.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/GridModel.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/ProgressSpinner.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/ProgressBar.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Container.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Fieldset.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/FormComponent.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Select.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/SelectList.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/Chart.js"
+            },  {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/ColorSelect.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/LanguageSelect.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/MultiLevelSelect.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/RadioButtonGroup.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/CheckboxInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/TextInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/EmailInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/NumberInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/PasswordInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/DefaultModule.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/DefaultView.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/SearchInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/UrlInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/TextAreaInput.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/VisualizationForm.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/AddButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/CancelButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/CloseButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/DeleteButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/EditButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/ExitButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/OkButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/SubmitButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/SaveButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/buttons/SearchButton.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/visualization-form/AreaForm.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/visualization-form/LineForm.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/component/visualization-form/DotForm.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/DefaultTile.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/DefaultFlyout.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/ExtraFlyout.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/DefaultExtension.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/DefaultView.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/framework/divmanazer/extension/DefaultLayout.js"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/divman.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/accordion.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/tab.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/modal.css"
+            },
+            {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/selectlist.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/badge.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/alert.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/formcomponent.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/forminput.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/grid.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/popup.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/button.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/overlay.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/visualizationform.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/popover.css"
+            }, {
+                "type": "text/css",
+                "src": "../../../../bundles/framework/divmanazer/resources/css/colorselect.css"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../libraries/jquery/plugins/jquery-placeholder/jquery.placeholder.js"
+            }, {
+                "type": "text/javascript",
+                "expose": "d3",
+                "src": "../../../../libraries/d3/d3.min.js"
+            } 
+        ],
+        "locales": [{
+            "lang": "af",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/af.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/AddExtensionRequest.js"
+            "lang": "ak",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ak.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/AddExtensionRequestHandler.js"
+            "lang": "am",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/am.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/RemoveExtensionRequest.js"
+            "lang": "ar",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ar.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/RemoveExtensionRequestHandler.js"
+            "lang": "az",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/az.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/UpdateExtensionRequest.js"
+            "lang": "be",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/be.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/UpdateExtensionRequestHandler.js"
+            "lang": "bg",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/bg.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/ModalDialogRequest.js"
+            "lang": "bm",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/bm.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/request/ModalDialogRequestHandler.js"
+            "lang": "bn",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/bn.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/event/ExtensionUpdatedEvent.js"
+            "lang": "bo",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/bo.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Accordion.js"
+            "lang": "br",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/br.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/AccordionPanel.js"
+            "lang": "bs",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/bs.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/TabContainer.js"
+            "lang": "ca",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ca.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/TabDropdownContainer.js"
+            "lang": "cs",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/cs.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/TabPanel.js"
+            "lang": "cy",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/cy.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Badge.js"
+            "lang": "da",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/da.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Alert.js"
+            "lang": "de",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/de.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Popup.js"
+            "lang": "dz",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/dz.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Overlay.js"
+            "lang": "ee",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ee.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Button.js"
+            "lang": "el",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/el.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Form.js"
+            "lang": "en",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/en.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/UIHelper.js"
+            "lang": "eo",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/eo.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/FormInput.js"
+            "lang": "es",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/es.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Popover.js"
+            "lang": "et",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/et.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/Grid.js"
+            "lang": "eu",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/eu.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/GridModel.js"
+            "lang": "fa",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/fa.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/ProgressSpinner.js"
+            "lang": "ff",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ff.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/VisualizationForm.js"
+            "lang": "fi",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/fi.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/visualization-form/AreaForm.js"
+            "lang": "fo",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/fo.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/component/visualization-form/LineForm.js"
+            "lang": "fr",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/fr.js"
         }, {
-            "type" : "text/javascript",
-"src" : "../../../../bundles/framework/bundle/divmanazer/component/visualization-form/DotForm.js"
+            "lang": "fy",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/fy.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/extension/DefaultTile.js"
+            "lang": "ga",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ga.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/extension/DefaultFlyout.js"
+            "lang": "gd",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/gd.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/extension/DefaultExtension.js"
+            "lang": "gl",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/gl.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/extension/DefaultView.js"
+            "lang": "gu",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/gu.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/extension/DefaultLayout.js"
+            "lang": "ha",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ha.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/divman.css"
+            "lang": "he",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/he.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/accordion.css"
+            "lang": "hi",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/hi.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/tab.css"
+            "lang": "hr",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/hr.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/modal.css"
+            "lang": "hu",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/hu.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/badge.css"
+            "lang": "hy",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/hy.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/alert.css"
+            "lang": "ia",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ia.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/forminput.css"
+            "lang": "id",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/id.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/grid.css"
+            "lang": "ig",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ig.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/popup.css"
+            "lang": "is",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/is.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/button.css"
+            "lang": "it",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/it.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/overlay.css"
+            "lang": "ja",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ja.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/visualizationform.css"
+            "lang": "ka",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ka.js"
         }, {
-            "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/divmanazer/css/popover.css"
+            "lang": "ki",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ki.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../libraries/raphaeljs/raphael.min.js"
+            "lang": "kk",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/kk.js"
         }, {
-            "type" : "text/javascript",
-            "src" : "../../../../libraries/jquery/plugins/jquery-placeholder/jquery.placeholder.js"
-        }/*, {
-         "type" : "text/javascript",
-         "src" : "../../../../resources/framework/bundle/divmanazer/js/jquery.event.drag-1.5.min.js"
-         }*/],
-        "locales" : [{
-            "lang" : "fi",
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/locale/fi.js"
+            "lang": "kl",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/kl.js"
         }, {
-            "lang" : "sv",
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/locale/sv.js"
+            "lang": "km",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/km.js"
         }, {
-            "lang" : "en",
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/locale/en.js"
+            "lang": "kn",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/kn.js"
         }, {
-            "lang" : "cs",
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/locale/cs.js"
+            "lang": "ko",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ko.js"
         }, {
-            "lang" : "de",
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/locale/de.js"
+            "lang": "ks",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ks.js"
         }, {
-            "lang" : "es",
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/divmanazer/locale/es.js"
+            "lang": "kw",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/kw.js"
+        }, {
+            "lang": "ky",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ky.js"
+        }, {
+            "lang": "lb",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/lb.js"
+        }, {
+            "lang": "lg",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/lg.js"
+        }, {
+            "lang": "ln",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ln.js"
+        }, {
+            "lang": "lo",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/lo.js"
+        }, {
+            "lang": "lt",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/lt.js"
+        }, {
+            "lang": "lu",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/lu.js"
+        }, {
+            "lang": "lv",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/lv.js"
+        }, {
+            "lang": "mg",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/mg.js"
+        }, {
+            "lang": "mk",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/mk.js"
+        }, {
+            "lang": "ml",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ml.js"
+        }, {
+            "lang": "mn",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/mn.js"
+        }, {
+            "lang": "mr",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/mr.js"
+        }, {
+            "lang": "ms",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ms.js"
+        }, {
+            "lang": "mt",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/mt.js"
+        }, {
+            "lang": "my",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/my.js"
+        }, {
+            "lang": "nb",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/nb.js"
+        }, {
+            "lang": "nd",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/nd.js"
+        }, {
+            "lang": "ne",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ne.js"
+        }, {
+            "lang": "nl",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/nl.js"
+        }, {
+            "lang": "nn",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/nn.js"
+        }, {
+            "lang": "om",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/om.js"
+        }, {
+            "lang": "or",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/or.js"
+        }, {
+            "lang": "os",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/os.js"
+        }, {
+            "lang": "pa",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/pa.js"
+        }, {
+            "lang": "pl",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/pl.js"
+        }, {
+            "lang": "ps",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ps.js"
+        }, {
+            "lang": "pt",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/pt.js"
+        }, {
+            "lang": "qu",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/qu.js"
+        }, {
+            "lang": "rm",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/rm.js"
+        }, {
+            "lang": "rn",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/rn.js"
+        }, {
+            "lang": "ro",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ro.js"
+        }, {
+            "lang": "ru",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ru.js"
+        }, {
+            "lang": "rw",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/rw.js"
+        }, {
+            "lang": "se",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/se.js"
+        }, {
+            "lang": "sg",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sg.js"
+        }, {
+            "lang": "si",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/si.js"
+        }, {
+            "lang": "sk",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sk.js"
+        }, {
+            "lang": "sl",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sl.js"
+        }, {
+            "lang": "sn",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sn.js"
+        }, {
+            "lang": "so",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/so.js"
+        }, {
+            "lang": "sq",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sq.js"
+        }, {
+            "lang": "sr",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sr.js"
+        }, {
+            "lang": "sv",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sv.js"
+        }, {
+            "lang": "sw",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/sw.js"
+        }, {
+            "lang": "ta",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ta.js"
+        }, {
+            "lang": "te",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/te.js"
+        }, {
+            "lang": "th",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/th.js"
+        }, {
+            "lang": "ti",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ti.js"
+        }, {
+            "lang": "tn",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/tn.js"
+        }, {
+            "lang": "to",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/to.js"
+        }, {
+            "lang": "tr",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/tr.js"
+        }, {
+            "lang": "ts",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ts.js"
+        }, {
+            "lang": "ug",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ug.js"
+        }, {
+            "lang": "uk",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/uk.js"
+        }, {
+            "lang": "ur",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/ur.js"
+        }, {
+            "lang": "uz",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/uz.js"
+        }, {
+            "lang": "vi",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/vi.js"
+        }, {
+            "lang": "yi",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/yi.js"
+        }, {
+            "lang": "yo",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/yo.js"
+        }, {
+            "lang": "zh",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/zh.js"
+        }, {
+            "lang": "zu",
+            "type": "text/javascript",
+            "src": "../../../../bundles/framework/divmanazer/resources/locale/zu.js"
         }]
+
     },
-    "bundle" : {
+    "bundle": {
         /**
          * @static
          * @property bundle.manifest
          */
-        "manifest" : {
-            "Bundle-Identifier" : "ui",
-            "Bundle-Name" : "ui",
-            "Bundle-Tag" : {
-                "mapframework" : true
+        "manifest": {
+            "Bundle-Identifier": "ui",
+            "Bundle-Name": "ui",
+            "Bundle-Tag": {
+                "mapframework": true
             },
 
-            "Bundle-Author" : [{
-                "Name" : "jjk",
-                "Organisation" : "nls.fi",
-                "Temporal" : {
-                    "Start" : "2009",
-                    "End" : "2011"
+            "Bundle-Author": [{
+                "Name": "jjk",
+                "Organisation": "nls.fi",
+                "Temporal": {
+                    "Start": "2009",
+                    "End": "2011"
                 },
-                "Copyleft" : {
-                    "License" : {
-                        "License-Name" : "EUPL",
-                        "License-Online-Resource" : "http://www.paikkatietoikkuna.fi/license"
+                "Copyleft": {
+                    "License": {
+                        "License-Name": "EUPL",
+                        "License-Online-Resource": "http://www.paikkatietoikkuna.fi/license"
                     }
                 }
             }],
-            "Bundle-Name-Locale" : {
-                "fi" : {
-                    "Name" : " kpI",
-                    "Title" : " kpI"
+            "Bundle-Name-Locale": {
+                "fi": {
+                    "Name": " kpI",
+                    "Title": " kpI"
                 },
-                "en" : {}
+                "en": {}
             },
-            "Bundle-Version" : "1.0.0",
-            "Import-Namespace" : ["Oskari"],
-            "Import-Bundle" : {}
+            "Bundle-Version": "1.0.0",
+            "Import-Namespace": ["Oskari"],
+            "Import-Bundle": {}
         }
     }
 });

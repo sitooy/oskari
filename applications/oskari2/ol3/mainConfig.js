@@ -5,7 +5,7 @@ require.config({
     "oskari-with-app": "src/oskari/oskari-with-app",
     "oskari-with-loader": "src/oskari/oskari-with-loader",
     jquery: "http://code.jquery.com/jquery-1.9.1",
-    "jquery-ui": "libraries/jquery/jquery-ui-1.9.1.custom",
+    "jquery-ui": "libraries/jquery/jquery-ui-1.9.2.custom",
     "dragevent": "libraries/jquery/jquery.event.drag-2.0.min",
     "jquery-migrate": "libraries/jquery/jquery-migrate-1.2.1-modified",
     css: "libraries/requirejs/lib/css",
@@ -31,6 +31,7 @@ require.config({
       "statehandler": "src/framework/statehandler/module",
       "infobox": "src/framework/infobox/module",
       "search": "src/framework/search/module",
+      "routesearch": "src/framework/routesearch/module",
       "layerselector2": "src/framework/layerselector2/module",
       "layerselection2": "src/framework/layerselection2/module",
       "personaldata": "src/framework/personaldata/module",
@@ -67,6 +68,20 @@ require.config({
   shim: {
     "oskari": {
       exports: "Oskari"
+    },
+    "jquery-ui": {
+      exports: "$",
+      deps: ['jquery']
+    },
+    "dragevent": {
+      exports: "$",
+      deps: ['jquery']
+    },
+    "oskari": {
+      exports: "Oskari"
+    },
+    "lodash": {
+      exports: "_"
     }
   },
   config: {

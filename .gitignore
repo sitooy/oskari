@@ -6,7 +6,9 @@ bin/
 dist/
 .idea
 *.iml
+.vscode
 oskari.org/
+!applications/oskari.org/
 node_modules/
 tools/node_modules
 tools/validation
@@ -18,3 +20,5 @@ tools/test-results.xml
 *.zip
 *.tgz
 *.tar.gz
+bower_components/*
+.DS_Store

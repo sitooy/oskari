@@ -27,34 +27,37 @@ Oskari.clazz.define("Oskari.mapframework.bundle.infobox.InfoBoxBundle",
 
             "scripts": [{
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/instance.js"
+                "src": "../../../../bundles/mapping/infobox/instance.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/plugin/openlayerspopup/OpenlayersPopupPlugin.js"
+                "src": "../../../../bundles/mapping/infobox/plugin/openlayerspopup/OpenlayersPopupPlugin.ol2.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/request/ShowInfoBoxRequest.js"
+                "src": "../../../../bundles/mapping/infobox/request/ShowInfoBoxRequest.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/request/ShowInfoBoxRequestHandler.js"
+                "src": "../../../../bundles/mapping/infobox/request/ShowInfoBoxRequestHandler.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/request/HideInfoBoxRequest.js"
+                "src": "../../../../bundles/mapping/infobox/request/HideInfoBoxRequest.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/request/HideInfoBoxRequestHandler.js"
+                "src": "../../../../bundles/mapping/infobox/request/HideInfoBoxRequestHandler.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/request/RefreshInfoBoxRequest.js"
+                "src": "../../../../bundles/mapping/infobox/request/RefreshInfoBoxRequest.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/request/RefreshInfoBoxRequestHandler.js"
+                "src": "../../../../bundles/mapping/infobox/request/RefreshInfoBoxRequestHandler.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/infobox/event/InfoBoxEvent.js"
+                "src": "../../../../bundles/mapping/infobox/event/InfoBoxEvent.js"
+            }, {
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/infobox/event/InfoboxActionEvent.js"
             }, {
                 "type": "text/css",
-                "src": "../../../../resources/framework/bundle/infobox/css/infobox.css"
+                "src": "../../../../bundles/mapping/infobox/resources/css/infobox_ol2.css"
             }]
         },
         "bundle": {

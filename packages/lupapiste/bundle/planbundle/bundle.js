@@ -27,27 +27,27 @@ function() {
 
         "scripts" : [{
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/planbundle/instance.js"
+            "src" : "../../../../bundles/lupapiste/planbundle/instance.js"
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/planbundle/Flyout.js"
+            "src" : "../../../../bundles/lupapiste/planbundle/Flyout.js"
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/planbundle/Tile.js"
+            "src" : "../../../../bundles/lupapiste/planbundle/Tile.js"
         }],
 
         "locales" : [{
             "lang" : "fi",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/planbundle/locale/fi.js"
+            "src" : "../../../../bundles/lupapiste/planbundle/resources/locale/fi.js"
         }, {
             "lang" : "sv",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/planbundle/locale/sv.js"
+            "src" : "../../../../bundles/lupapiste/planbundle/resources/locale/sv.js"
         }, {
             "lang" : "en",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/planbundle/locale/en.js"
+            "src" : "../../../../bundles/lupapiste/planbundle/resources/locale/en.js"
         }]
     },
     "bundle" : {

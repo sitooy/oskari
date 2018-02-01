@@ -1,7 +1,10 @@
 /**
  * @class Oskari.mapframework.bundle.PluginMapModuleBundle
  */
-Oskari.clazz.define("Oskari.mapframework.bundle.PluginMapModuleBundle", function () {}, {
+Oskari.clazz.define(
+    "Oskari.mapframework.bundle.PluginMapModuleBundle",
+    function () {},
+    {
         /*
          * implementation for protocol 'Oskari.bundle.Bundle'
          */
@@ -28,158 +31,211 @@ Oskari.clazz.define("Oskari.mapframework.bundle.PluginMapModuleBundle", function
 
                 {
                     "type": "text/javascript",
-                    "src": "../../../../src/mapping/mapmodule/AbstractMapModule.js"
+                    "src": "../../../../bundles/mapping/mapmodule/AbstractMapModule.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/AbstractMapLayerPlugin.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/AbstractMapModulePlugin.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/BasicMapModulePlugin.js"
                 },
                 /*
                  * map-module
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/ui/module/map-module.js"
+                    "src": "../../../../bundles/mapping/mapmodule/mapmodule.ol2.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/Plugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/Plugin.js"
+                },
+                /*
+                 * domain
+                 */
+                {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/domain/AbstractLayer.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/domain/style.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/domain/tool.js"
                 },
                 /**
                  * controls plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/controls/ControlsPlugin.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/controls/ControlsPlugin.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/controls/PorttiKeyboard.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/controls/PorttiKeyboard.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/controls/PorttiMouse.js"
-                }, {
-
-
-                    "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/DisableMapKeyboardMovementRequest.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/controls/OskariNavigation.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/DisableMapMouseMovementRequest.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/controls/OskariPinchZoom.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/EnableMapKeyboardMovementRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/DisableMapKeyboardMovementRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/EnableMapMouseMovementRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/DisableMapMouseMovementRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapMovementControlsRequestHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/EnableMapKeyboardMovementRequest.js"
                 }, {
-
-
                     "type": "text/javascript",
-                    "src": "../../../../sources/framework/request/common/show-map-measurement-request.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/EnableMapMouseMovementRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/framework/mapmodule-plugin/request/MapMovementControlsRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/ShowMapMeasurementRequest.js"
                 },
                 /**
                  * GFI
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/getinfo/GetFeatureInfoHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/getinfo/GetFeatureInfoHandler.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/GetFeatureInfoRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/GetFeatureInfoRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/GetFeatureInfoActivationRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/GetFeatureInfoActivationRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/getinfo/GetInfoPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/getinfo/GetInfoPlugin.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/getinfo/GetFeatureInfoFormatter.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/getinfo/GetFeatureInfoFormatter.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/getinfo/request/ResultHandlerRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/getinfo/request/ResultHandlerRequestHandler.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/getinfo/css/getinfo.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/getinfo.css"
                 },
                 /**
                  * Markers plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/markers/MarkersPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/markers/MarkersPlugin.ol2.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/RemoveMarkerRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/AddMarkerRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MarkerRequestHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/AddMarkerRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/RemoveMarkersRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/RemoveMarkersRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/AfterAddMarkerEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/MarkerClickEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/AfterRemoveMarkersEvent.js"
+                },{
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/MarkerVisibilityRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/MarkerVisibilityRequestHandler.js"
                 },
+
                 /**
                  * Search plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/search/SearchPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/search/SearchPlugin.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/search/service/searchservice.js"
+                    "src": "../../../../bundles/service/search/searchservice.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/service/search/event/SearchResultEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/service/search/request/SearchRequest.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/search/css/search.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/search.css"
                 },
                 /**
                  * Logo plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/logo/LogoPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/logo/LogoPlugin.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/logo/DataProviderInfoService.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/logo/logo.service.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/logo/css/logoplugin.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/logoplugin.css"
                 },
                 /**
                  * Data Source plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/datasource/DataSourcePlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/datasource/DataSourcePlugin.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/datasource/css/datasource.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/datasource.css"
                 },
-
-
                 // IndexMap
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/indexmap/IndexMapPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/indexmap/IndexMapPlugin.ol2.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/indexmap/css/indexmap.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/indexmap_ol2.css"
                 },
-
                 // ScaleBar
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/scalebar/ScaleBarPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/scalebar/ScaleBarPlugin.ol2.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/scalebar/css/scalebar.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/scalebar_ol2.css"
                 },
-                /**
-                 * PublisherToolbarPlugin plugin
-                 */
-                {
-                    "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/publishertoolbar/PublisherToolbarPlugin.js"
-                }, {
-                    "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/publishertoolbar/css/publishertoolbar.css"
-                },
-
                 // FullScreen
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/fullscreen/FullScreen.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/fullscreen/FullScreen.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/ToggleFullScreenControlRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/ToggleFullScreenControlRequestHandler.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/fullscreen/css/fullscreen.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/fullscreen.css"
                 },
 
                 /**
@@ -187,10 +243,10 @@ Oskari.clazz.define("Oskari.mapframework.bundle.PluginMapModuleBundle", function
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/layers/LayerSelectionPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/layers/LayerSelectionPlugin.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/layers/css/layersselection.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/layersselection.css"
                 },
 
                 /**
@@ -198,116 +254,165 @@ Oskari.clazz.define("Oskari.mapframework.bundle.PluginMapModuleBundle", function
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/layers/BackgroundLayerSelectionPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/layers/BackgroundLayerSelectionPlugin.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/layers/css/backgroundlayerselection.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/backgroundlayerselection.css"
                 },
                 /**
                  * Layers plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/layers/LayersPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/layers/LayersPlugin.ol2.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapLayerVisibilityRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapLayerVisibilityRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapLayerVisibilityRequestHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapLayerVisibilityRequestHandler.ol2.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapMoveByLayerContentRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapMoveByLayerContentRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapMoveByLayerContentRequestHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapMoveByLayerContentRequestHandler.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/event/MapLayerVisibilityChangedEvent.js"
+                    "src": "../../../../bundles/mapping/mapmodule/event/MapLayerVisibilityChangedEvent.js"
                 },
-
                 /** Layers backport */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/wmslayer/WmsLayerPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/wmslayer/WmsLayerPlugin.ol2.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/wmslayer/wmslayer.js"
                 },
-
                 /**
                  * Vector Layer plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/vectorlayer/VectorLayerPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/vectorlayer/VectorLayerPlugin.ol2.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/vectorlayer/vectorlayer.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/FeatureEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/vectorlayer/request/AddFeaturesToMapRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/vectorlayer/request/AddFeaturesToMapRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/vectorlayer/request/RemoveFeaturesFromMapRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/vectorlayer/request/RemoveFeaturesFromMapRequestHandler.js"
                 },
                 /**
                  * GeoLocation plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/location/GeoLocationPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/location/GeoLocationPlugin.js"
                 },
-
                 /**
-                 * GeoLocation plugin
+                 * Draw plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/DrawPlugin.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/DrawPlugin.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/event/AddedFeatureEvent.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/event/AddedFeatureEvent.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/event/FinishedDrawingEvent.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/event/FinishedDrawingEvent.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/event/SelectedDrawingEvent.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/event/SelectedDrawingEvent.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/event/ActiveDrawingEvent.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/event/ActiveDrawingEvent.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/request/GetGeometryRequest.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/request/GetGeometryRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/request/GetGeometryRequestHandler.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/request/GetGeometryRequestHandler.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/request/StartDrawingRequest.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/request/StartDrawingRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/request/StartDrawingRequestHandler.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/request/StartDrawingRequestHandler.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/request/StopDrawingRequest.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/request/StopDrawingRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/drawplugin/request/StopDrawingRequestHandler.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/drawplugin/request/StopDrawingRequestHandler.js"
                 },
-
                 /**
                  * Publishertoolbar plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/publishertoolbar/PublisherToolbarPlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/publishertoolbar/PublisherToolbarPlugin.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/publishertoolbar/request/ToolContainerRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/publishertoolbar/request/ToolContainerRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/publishertoolbar/request/ToolContainerRequestHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/publishertoolbar/request/ToolContainerRequestHandler.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/publishertoolbar/css/publishertoolbar.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/publishertoolbar.css"
                 },
-
                 /**
                  * Realtime plugin
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/realtime/RealtimePlugin.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/realtime/RealtimePlugin.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/realtime/event/RefreshLayerEvent.js"
+                },
+                /**
+                 * My Location plugin
+                 */
+                {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/mylocation/MyLocationPlugin.js"
+                }, {
+                    "type": "text/css",
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/mylocation.css"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/GetUserLocationRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/GetUserLocationRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/UserLocationEvent.js"
+                },
+
+                /**
+                 * Services
+                 */
+                {
+                    "type" : "text/javascript",
+                    "src" : "../../../../bundles/mapping/mapmodule/service/map.layer.js"
+                }, {
+                    "type" : "text/javascript",
+                    "src" : "../../../../bundles/mapping/mapmodule/service/map.state.js"
                 },
 
                 /**
@@ -315,145 +420,233 @@ Oskari.clazz.define("Oskari.mapframework.bundle.PluginMapModuleBundle", function
                  */
                 {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/ToolSelectionRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/ToolSelectionRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/controls/ToolSelectionHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapMoveRequest.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapLayerUpdateRequest.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/activate.map.layer.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapLayerUpdateRequestHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/add.map.layer.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/request/MapMoveRequestHandler.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/remove.map.layer.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/event/MapClickedEvent.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/set.opacity.map.layer.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/event/EscPressedEvent.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/set.style.map.layer.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/event/GetInfoResultEvent.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/set.order.map.layer.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/event/MapSizeChangedEvent.js"
+                    "src": "../../../../bundles/mapping/mapmodule/request/map.layer.handler.js"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/zoombar/Portti2Zoombar.js"
+                    "src": "../../../../bundles/framework/mapmodule-plugin/plugin/controls/ToolSelectionHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapLayerUpdateRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapLayerUpdateRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/MapMoveRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/ShowProgressSpinnerRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/ShowProgressSpinnerRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/RegisterStyleRequest.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/request/RegisterStyleRequestHandler.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/MapClickedEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/map.layer.activation.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/map.layer.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/map.layer.add.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/map.layer.remove.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/map.layer.order.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/map.layer.opacity.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/map.layer.style.js"
+                }, {
+                   "type": "text/javascript",
+                   "src": "../../../../bundles/mapping/mapmodule/event/ProgressEvent.js"
+                }, {
+                    "type" : "text/javascript",
+                    "src" : "../../../../bundles/mapping/mapmodule/event/MouseHoverEvent.js"
+                }, {
+                    "type" : "text/javascript",
+                    "src" : "../../../../bundles/mapping/mapmodule/event/MapMoveStartEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/EscPressedEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/AfterMapMoveEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/GetInfoResultEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/event/MapSizeChangedEvent.js"
+                }, {
+                    "type": "text/javascript",
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/zoombar/Portti2Zoombar.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/zoombar/css/porttizoombar.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/porttizoombar.css"
                 }, {
                     "type": "text/javascript",
-                    "src": "../../../../bundles/framework/bundle/mapmodule-plugin/plugin/panbuttons/PanButtons.js"
+                    "src": "../../../../bundles/mapping/mapmodule/plugin/panbuttons/PanButtons.js"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/plugin/panbuttons/css/panbuttons.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/panbuttons.css"
                 }, {
                     "type": "text/css",
-                    "src": "../../../../resources/framework/bundle/mapmodule-plugin/css/mapmodule.css"
+                    "src": "../../../../bundles/mapping/mapmodule/resources/css/mapmodule_ol2.css"
                 }
             ],
             "locales": [{
-                // when lang is undefined, loader loads each language file, publisher needs localization for each
-                //"lang" : "am",
+                "lang" : "hy",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/am.js"
-            },{
-                //"lang" : "bg",
-                "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/bg.js"
-            },{
-                //"lang" : "cs",
-                "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/cs.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/hy.js"
             }, {
-                //"lang" : "da",
+                "lang" : "bg",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/da.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/bg.js"
             }, {
-                //"lang" : "de",
+                "lang" : "cs",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/de.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/cs.js"
             }, {
-                //"lang" : "en",
+                "lang" : "da",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/en.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/da.js"
             }, {
-                //"lang" : "es",
+                "lang" : "de",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/es.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/de.js"
             }, {
-                //"lang" : "et",
+                "lang" : "en",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/et.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/en.js"
             }, {
-                //"lang" : "fi",
+                "lang" : "es",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/fi.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/es.js"
             }, {
-                //"lang" : "ge",
+                "lang" : "et",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/ge.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/et.js"
             }, {
-                //"lang" : "gr",
+                "lang" : "fi",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/gr.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/fi.js"
             }, {
-                //"lang" : "hr",
+                "lang" : "fr",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/hr.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/fr.js"
             }, {
-                //"lang" : "hu",
+                "lang" : "ka",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/hu.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/ka.js"
             }, {
-                //"lang" : "lv",
+                "lang" : "el",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/lv.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/el.js"
             }, {
-                //"lang" : "nl",
+                "lang" : "hr",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/nl.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/hr.js"
             }, {
-                //"lang" : "pl",
+                "lang" : "hu",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/pl.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/hu.js"
             }, {
-                //"lang" : "pt",
+                "lang" : "is",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/pt.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/is.js"
             }, {
-                //"lang" : "ro",
+                "lang" : "it",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/ro.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/it.js"
             }, {
-                //"lang" : "rs",
+                "lang" : "lv",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/rs.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/lv.js"
             }, {
-                //"lang" : "sl",
+                "lang" : "nl",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/sl.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/nl.js"
             }, {
-                //"lang" : "sk",
+                "lang" : "nb",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/sk.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/nb.js"
             }, {
-                //"lang" : "sq",
+                "lang" : "nn",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/sq.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/nn.js"
             }, {
-                //"lang" : "sv",
+                "lang" : "pl",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/sv.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/pl.js"
             }, {
-                //"lang" : "uk",
+                "lang" : "pt",
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapmodule-plugin/locale/uk.js"
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/pt.js"
+            }, {
+                "lang" : "ro",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/ro.js"
+            }, {
+                "lang" : "sr",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/sr.js"
+            }, {
+                "lang" : "sl",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/sl.js"
+            }, {
+                "lang" : "sk",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/sk.js"
+            }, {
+                "lang" : "sq",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/sq.js"
+            }, {
+                "lang" : "sv",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/sv.js"
+            }, {
+                "lang" : "uk",
+                "type": "text/javascript",
+                "src": "../../../../bundles/mapping/mapmodule/resources/locale/uk.js"
             }]
         },
         "bundle": {
@@ -492,7 +685,8 @@ Oskari.clazz.define("Oskari.mapframework.bundle.PluginMapModuleBundle", function
                 "Import-Namespace": ["Oskari", "Ext", "OpenLayers"]
             }
         }
-    });
+    }
+);
 
 /**
  * Install this bundle

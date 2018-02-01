@@ -26,7 +26,8 @@
       "scripts" : [
         {
           "type" : "text/javascript",
-          "src" : "../../../../libraries/geostats/geostats.min.js"
+          "expose" : "geostats",
+          "src" : "../../../../libraries/geostats/geostats-0.9.min.js"
         },
 
         {

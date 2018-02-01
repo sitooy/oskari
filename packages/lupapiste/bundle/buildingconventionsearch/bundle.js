@@ -27,27 +27,27 @@ function() {
 
         "scripts" : [{
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/buildingconventionsearch/instance.js"
+            "src" : "../../../../bundles/lupapiste/buildingconventionsearch/instance.js"
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/buildingconventionsearch/Flyout.js"
+            "src" : "../../../../bundles/lupapiste/buildingconventionsearch/Flyout.js"
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/buildingconventionsearch/Tile.js"
+            "src" : "../../../../bundles/lupapiste/buildingconventionsearch/Tile.js"
         }],
 
         "locales" : [{
             "lang" : "fi",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/buildingconventionsearch/locale/fi.js"
+            "src" : "../../../../bundles/lupapiste/buildingconventionsearch/resources/locale/fi.js"
         }, {
             "lang" : "sv",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/buildingconventionsearch/locale/sv.js"
+            "src" : "../../../../bundles/lupapiste/buildingconventionsearch/resources/locale/sv.js"
         }, {
             "lang" : "en",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/buildingconventionsearch/locale/en.js"
+            "src" : "../../../../bundles/lupapiste/buildingconventionsearch/resources/locale/en.js"
         }]
     },
     "bundle" : {

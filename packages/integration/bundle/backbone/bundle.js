@@ -52,19 +52,19 @@ Oskari.clazz.define("Oskari.integration.bundle.backbone.BackBoneBundle", functio
 
         "scripts" : [{
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/backbone/Flyout.js"
+            "src" : "../../../../bundles/integration/backbone/Flyout.js"
 
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/backbone/Tile.js"
+            "src" : "../../../../bundles/integration/backbone/Tile.js"
 
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/backbone/View.js"
+            "src" : "../../../../bundles/integration/backbone/View.js"
 
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/backbone/Adapter.js"
+            "src" : "../../../../bundles/integration/backbone/Adapter.js"
 
         }],
         "resources" : []
@@ -97,7 +97,8 @@ Oskari.clazz.define("Oskari.integration.bundle.backbone.BackBoneBundle", functio
             "Import-Namespace" : ["Oskari"],
             "Import-Bundle" : {}
         }
-    }
+    },
+    "dependencies": ["jquery", "lodash"]
 });
 
 Oskari.bundle_manager.installBundleClass("backbone", "Oskari.integration.bundle.backbone.BackBoneBundle");

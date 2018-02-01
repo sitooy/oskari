@@ -31,25 +31,25 @@ Oskari.clazz.define("Oskari.integration.bundle.bb.BackBoneBundle", function() {
 
     "protocol" : ["Oskari.bundle.Bundle", "Oskari.bundle.BundleInstance", "Oskari.bundle.BundleInstance", "Oskari.mapframework.bundle.extension.ExtensionBundle"],
     "source" : {
-        "scripts" : [{
+        "scripts" : [
+        {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/bb/comp.js"
+            "src" : "../../../../libraries/backbone/comp.js"
+        }, {
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/integration/bb/Flyout.js"
 
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/bb/Flyout.js"
+            "src" : "../../../../bundles/integration/bb/Tile.js"
 
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/bb/Tile.js"
+            "src" : "../../../../bundles/integration/bb/View.js"
 
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/bb/View.js"
-
-        }, {
-            "type" : "text/javascript",
-            "src" : "../../../../bundles/integration/bundle/bb/Adapter.js"
+            "src" : "../../../../bundles/integration/bb/Adapter.js"
 
         }],
         "resources" : []
@@ -82,7 +82,8 @@ Oskari.clazz.define("Oskari.integration.bundle.bb.BackBoneBundle", function() {
             "Import-Namespace" : ["Oskari"],
             "Import-Bundle" : {}
         }
-    }
+    },
+    "dependencies": ["jquery", "lodash"]
 });
 
 Oskari.bundle_manager.installBundleClass("bb", "Oskari.integration.bundle.bb.BackBoneBundle");

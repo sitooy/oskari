@@ -41,36 +41,72 @@ function() {
 
         "scripts" : [{
             "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/admin-layerrights/instance.js"
+            "src" : "../../../../bundles/framework/admin-layerrights/instance.js"
         },{
             "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/admin-layerrights/Flyout.js"
+            "src" : "../../../../bundles/framework/admin-layerrights/Flyout.js"
         },{
             "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/admin-layerrights/Tile.js"
+            "src" : "../../../../bundles/framework/admin-layerrights/Tile.js"
         }, {
             "type" : "text/css",
-            "src" : "../../../../resources/framework/bundle/admin-layerrights/css/style.css"
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/css/style.css"
         }, {
-            "src" : "../../../../libraries/chosen/chosen.jquery.js",
+            "src" : "../../../../libraries/chosen/1.5.1/chosen.jquery.js",
             "type" : "text/javascript"
         }, {
-            "src" : "../../../../libraries/chosen/chosen.css",
+            "src" : "../../../../libraries/chosen/1.5.1/chosen.css",
             "type" : "text/css"
         }],
 
         "locales" : [{
             "lang" : "fi",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/admin-layerrights/locale/fi.js"
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/fi.js"
         }, {
             "lang" : "sv",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/admin-layerrights/locale/sv.js"
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/sv.js"
         }, {
             "lang" : "en",
             "type" : "text/javascript",
-            "src" : "../../../../bundles/framework/bundle/admin-layerrights/locale/en.js"
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/en.js"
+        }, {
+            "lang" : "et",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/et.js"
+        }, {
+            "lang" : "is",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/is.js"
+        }, {
+            "lang" : "it",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/it.js"
+        }, {
+            "lang" : "nl",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/nl.js"
+        }, {
+            "lang" : "sk",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/sk.js"
+        }, {
+            "lang" : "sl",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/sl.js"
+        }, {
+            "lang" : "nb",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/nb.js"
+        }, {
+            "lang" : "es",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/es.js"
+        }, {
+            "lang" : "fr",
+            "type" : "text/javascript",
+            "src" : "../../../../bundles/framework/admin-layerrights/resources/locale/fr.js"
         }]
     },
     "bundle" : {

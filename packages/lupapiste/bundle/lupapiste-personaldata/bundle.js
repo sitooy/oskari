@@ -22,63 +22,63 @@ Oskari.clazz.define("Oskari.mapframework.bundle.personaldata.PersonalDataBundle"
 
 		"scripts" : [{
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/instance.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/instance.js"
 		}, {
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/Flyout.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/Flyout.js"
 		}, {
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/Tile.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/Tile.js"
 		}, {
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/MyPlacesTab.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/MyPlacesTab.js"
 		}, {
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/MyViewsTab.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/MyViewsTab.js"
 		}, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/service/ViewService.js"
+            "src" : "../../../../bundles/lupapiste/lupapiste-personaldata/service/ViewService.js"
         }, {
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/PublishedMapsTab.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/PublishedMapsTab.js"
 		}, {
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/AccountTab.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/AccountTab.js"
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/request/AddTabRequest.js"
+            "src" : "../../../../bundles/lupapiste/lupapiste-personaldata/request/AddTabRequest.js"
         }, {
             "type" : "text/javascript",
-            "src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/request/AddTabRequestHandler.js"
+            "src" : "../../../../bundles/lupapiste/lupapiste-personaldata/request/AddTabRequestHandler.js"
 		}, {
 		    "type" : "text/css",
-		    "src" : "../../../../resources/lupapiste/bundle/lupapiste-personaldata/css/personaldata.css"		  
+		    "src" : "../../../../bundles/lupapiste/lupapiste-personaldata/resources/css/personaldata.css"
 		}],
 		
 		"locales" : [{
 			"lang" : "fi",
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/locale/fi.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/resources/locale/fi.js"
 		}, {
 			"lang" : "sv",
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/locale/sv.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/resources/locale/sv.js"
 		}, {
 			"lang" : "en",
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/locale/en.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/resources/locale/en.js"
 		}, {
 			"lang" : "cs",
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/locale/cs.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/resources/locale/cs.js"
 		}, {
 			"lang" : "de",
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/locale/de.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/resources/locale/de.js"
 		}, {
 			"lang" : "es",
 			"type" : "text/javascript",
-			"src" : "../../../../bundles/lupapiste/bundle/lupapiste-personaldata/locale/es.js"
+			"src" : "../../../../bundles/lupapiste/lupapiste-personaldata/resources/locale/es.js"
 		}]
 	},
 	"bundle" : {

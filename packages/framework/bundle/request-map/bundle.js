@@ -56,41 +56,7 @@ function() {
 	"protocol" : ["Oskari.bundle.Bundle"],
 	"source" : {
 
-		"scripts" : [
-
-		/**
-		 * map
-		 */
-		/*{
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/disable-map-keyboard-movement-request.js"
-		}, {
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/enable-map-keyboard-movement-request.js"
-		}, */ 
-		{
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/add-map-layer-request.js"
-		}, {
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/remove-map-layer-request.js"
-		}, {
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/map-move-request.js"
-		}, {
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/show-map-layer-info-request.js"
-		}, {
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/hide-map-marker-request.js"
-		}, {
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/ctrl-key-down-request.js"
-		}, {
-			"type" : "text/javascript",
-			"src" : "../../../../sources/framework/request/common/ctrl-key-up-request.js"
-		}
-		],
+		"scripts" : [],
 		"resources" : []
 	},
 	"bundle" : {

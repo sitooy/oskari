@@ -14,32 +14,32 @@ Oskari.clazz.define("Oskari.lupapiste.bundle.shpimport.ShpImportBundle",
     "source": {
         "scripts": [{
             "type": "text/javascript",
-            "src": "../../../../bundles/lupapiste/bundle/lupapiste-shpimport/instance.js"
+            "src": "../../../../bundles/lupapiste/lupapiste-shpimport/instance.js"
         }, {
             "type": "text/javascript",
-            "src": "../../../../bundles/lupapiste/bundle/lupapiste-shpimport/Flyout.js"
+            "src": "../../../../bundles/lupapiste/lupapiste-shpimport/Flyout.js"
         }, {
             "type": "text/javascript",
-            "src": "../../../../bundles/lupapiste/bundle/lupapiste-shpimport/service/MyPlacesImportService.js"
+            "src": "../../../../bundles/lupapiste/lupapiste-shpimport/service/MyPlacesImportService.js"
         }, {
             "type": "text/javascript",
-            "src": "../../../../bundles/lupapiste/bundle/lupapiste-shpimport/UserLayersTab.js"
+            "src": "../../../../bundles/lupapiste/lupapiste-shpimport/UserLayersTab.js"
         }, {
-          "type" : "text/css",
-          "src" : "../../../../resources/lupapiste/bundle/lupapiste-shpimport/css/shpimport.css"      
+            "type" : "text/css",
+            "src" : "../../../../bundles/lupapiste/lupapiste-shpimport/resources/css/shpimport.css"
         }],
         "locales": [{
             "lang": "fi",
             "type": "text/javascript",
-            "src": "../../../../bundles/lupapiste/bundle/lupapiste-shpimport/locale/fi.js"
+            "src": "../../../../bundles/lupapiste/lupapiste-shpimport/resources/locale/fi.js"
         }, {
             "lang": "sv",
             "type": "text/javascript",
-            "src": "../../../../bundles/lupapiste/bundle/lupapiste-shpimport/locale/sv.js"
+            "src": "../../../../bundles/lupapiste/lupapiste-shpimport/resources/locale/sv.js"
         }, {
             "lang": "en",
             "type": "text/javascript",
-            "src": "../../../../bundles/lupapiste/bundle/lupapiste-shpimport/locale/en.js"
+            "src": "../../../../bundles/lupapiste/lupapiste-shpimport/resources/locale/en.js"
         }]
     },
     "bundle": {

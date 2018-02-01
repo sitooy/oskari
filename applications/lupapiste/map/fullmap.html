@@ -1,0 +1,66 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Lupapiste kartta</title>
+<!-- ############# css ################# -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="resources/css/forms.css"/>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="resources/css/portal.css"/>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="resources/icons.css"/>
+		
+<!-- default Oskari styles -->
+<link rel="stylesheet" type="text/css" href="map/oskari.min.css" />
+
+<!-- lupapiste styles -->
+<link rel="stylesheet" type="text/css" href="/app/latest/oskari.css" />
+
+<!-- ############# /css ################# -->
+
+<!-- ############# Javascript ################# -->
+<script type="text/javascript" 
+	src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.2.min.js">
+</script>
+
+<script type="text/javascript">
+var hub;
+if (window.opener) {
+	hub = window.opener.hub;
+}
+</script>
+
+<script type="text/javascript" src="bundles/bundle.js"></script>
+
+<!--  OSKARI -->
+<script type="text/javascript" src="map/oskari.min.js"></script>
+<script type="text/javascript" src="map/oskari_lang_en.js"></script>
+<script type="text/javascript" src="map/oskari_lang_fi.js"></script>
+<script type="text/javascript" src="map/oskari_lang_sv.js"></script>
+
+<script type="text/javascript" src="js/fullmap.js"></script>
+<!-- ############# /Javascript ################# -->
+</head>
+<body>
+<nav id="maptools">
+<div id="loginbar">
+</div>
+<div id="menubar">
+</div>
+<div id="divider">
+</div>
+<div id="toolbar">
+</div>
+</nav>
+<div id="contentMap">
+<div id="mapdiv"> </div>
+</div>
+</body>
+</html>

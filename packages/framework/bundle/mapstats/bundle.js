@@ -26,38 +26,22 @@ Oskari.clazz.define(
 
             "scripts": [{
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/plugin/StatsLayerPlugin.js"
+                "src": "../../../../bundles/mapping/mapstats/plugin/StatsLayerPlugin.ol2.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/domain/StatsLayer.js"
+                "src": "../../../../bundles/mapping/mapstats/domain/StatsLayer.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/domain/StatsLayerModelBuilder.js"
+                "src": "../../../../bundles/mapping/mapstats/event/StatsVisualizationChangeEvent.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/event/StatsVisualizationChangeEvent.js"
+                "src": "../../../../bundles/mapping/mapstats/event/FeatureHighlightedEvent.js"
             }, {
                 "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/event/FeatureHighlightedEvent.js"
-            }, {
-                "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/event/HoverTooltipContentEvent.js"
+                "src": "../../../../bundles/mapping/mapstats/event/HoverTooltipContentEvent.js"
             }, {
                 "type": "text/css",
-                "src": "../../../../resources/framework/bundle/mapstats/css/mapstats.css"
-            }],
-            "locales": [{
-                "lang": "fi",
-                "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/locale/fi.js"
-            }, {
-                "lang": "sv",
-                "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/locale/sv.js"
-            }, {
-                "lang": "en",
-                "type": "text/javascript",
-                "src": "../../../../bundles/framework/bundle/mapstats/locale/en.js"
+                "src": "../../../../bundles/mapping/mapstats/resources/css/mapstats.css"
             }]
         },
         "bundle": {
