@@ -235,10 +235,9 @@ body {
   transform: rotate(270deg);
   transform-origin: center;
   white-space: nowrap;
-    cursor: pointer;
-    /** Fixes blurry text on chrome https://stackoverflow.com/questions/20326220/blurry-text-on-transformrotate-in-chrome */
-    -webkit-transform-origin: 50% 53%;
-}
+  cursor: pointer;
+  /** Fixes blurry text on chrome https://stackoverflow.com/questions/20326220/blurry-text-on-transformrotate-in-chrome */
+  -webkit-transform-origin: 50% 53%; }
 
 /** media queries */
 @media screen {

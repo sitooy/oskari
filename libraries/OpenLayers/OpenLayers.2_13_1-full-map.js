@@ -37577,6 +37577,9 @@ OpenLayers.Layer.Vector = OpenLayers.Class(OpenLayers.Layer, {
         if (!this.drawn) {
             return;
         }
+        if (!feature) {
+            return;
+        }
         if (typeof style != "object") {
             if(!style && feature.state === OpenLayers.State.DELETE) {
                 style = "delete";

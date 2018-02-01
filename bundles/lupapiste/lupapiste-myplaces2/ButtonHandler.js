@@ -14,6 +14,7 @@ function(instance) {
     this.buttonGroup = 'myplaces';
     this.ignoreEvents = false;
     this.dialog = null;
+    this.drawMode = null;
     var me = this;
     this.buttons = {
         'point' : {
@@ -171,9 +172,9 @@ function(instance) {
      */
     sendDrawRequest : function(config) {
         var me = this;
+        this.drawMode = config.drawMode;
         var startRequest = this.instance.sandbox.getRequestBuilder('LupaPisteMyPlaces.StartDrawingRequest')(config);
         this.instance.sandbox.request(this, startRequest);
-
         if(!config.geometry) {
             // show only when drawing new place
             this._showDrawHelper(config.drawMode);
@@ -279,11 +280,15 @@ function(instance) {
          * @param {Oskari.mapframework.bundle.toolbar.event.ToolSelectedEvent} event
          */
         'Toolbar.ToolSelectedEvent' : function(event) {
-            if(!this.ignoreEvents) {
+            if (event.getToolId() !== this.drawMode && !this.ignoreEvents) {
                 // changed tool -> cancel any drawing
-                // do not trigger when we return drawing tool to 
+                // do not trigger when we return drawing tool to
                 this.sendStopDrawRequest(true);
                 this.instance.enableGfi(true);
+                this.drawMode = null;
+                if (this.dialog){
+                    this.dialog.close();
+                }
             }
         },
         /**

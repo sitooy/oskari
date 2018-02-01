@@ -2,6 +2,10 @@ div.layerselector2 div.layer-filter {
   margin: 10px;
   color: #949494; }
 
+div.layerselector2 div.header .badge-wrapper {
+  right: 8%;
+  max-width: 50px; }
+
 div.layerselector2 div.filter {
   border: 1px solid #a4a4a4;
   padding: 10px;
@@ -137,11 +141,4 @@ div.layerselector2 div.tab-content {
           text-align: center; }
       div.layerselector2 div.tab-content div.oskarifield .related-keywords .focus {
         background-color: #333438;
-    color: white;
-}
-div.layerselector2 div.header .badge-wrapper {
-    right: 8%;
-    max-width: 50px;
-}
-
-/*# sourceMappingURL=style.css.map */
+        color: white; }

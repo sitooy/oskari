@@ -87,9 +87,6 @@ jQuery(document).ready(function() {
     // check that both setup and config are loaded
     // before actually starting the application
     if (appSetup && appConfig && wmsLayers) {
-      var app = Oskari.app;
-      app.setApplicationSetup(appSetup);
-
       var coord = getRequestParameter('coord');
       var zoomLevel = getRequestParameter('zoomLevel');
       
@@ -281,8 +278,19 @@ jQuery(document).ready(function() {
         });
       }
       
-      app.setConfiguration(appConfig);
-      app.startApplication(function(startupInfos) {
+      appSetup.configuration = appConfig;
+      appSetup.env = {
+        "urls": {},
+        "user": {
+          "lastName": "lastName",
+          "nickName": "nickName",
+          "userUUID": "808",
+          "firstName": "firstName",
+          "loginName": "loginName"
+        }
+      };
+      Oskari.app.init(appSetup);
+      Oskari.app.startApplication(function () {
 
       });
     }
