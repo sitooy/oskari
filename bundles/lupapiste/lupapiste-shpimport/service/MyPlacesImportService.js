@@ -113,14 +113,14 @@ function(instance, importUrl) {
                 var placeObj = list[iy];
                 var f = new OpenLayers.Feature.Vector();                    
                 f.geometry = placeObj.getGeometry();
-                f.attributes['id'] = placeObj.getId();
-                f.attributes['name'] = placeObj.getName();
-                f.attributes['link'] = placeObj.getLink();
-                f.attributes['desc'] = placeObj.getDescription();
-                f.attributes['height'] = placeObj.getHeight();
-                f.attributes['category'] = placeObj.getCategoryID();
-                f.attributes['area'] = placeObj.getArea();
-                f.attributes['length'] = placeObj.getLength();
+                f.attributes['id'] = placeObj.getId() || '';
+                f.attributes['name'] = placeObj.getName() || '';
+                f.attributes['link'] = placeObj.getLink() || '';
+                f.attributes['desc'] = placeObj.getDescription() || '';
+                f.attributes['height'] = placeObj.getHeight() || '';
+                f.attributes['category'] = placeObj.getCategoryID() || '';
+                f.attributes['area'] = placeObj.getArea() || '';
+                f.attributes['length'] = placeObj.getLength() || '';
 
                 featuresToSave.push(f);
             }
