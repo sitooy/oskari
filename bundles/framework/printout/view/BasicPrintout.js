@@ -649,15 +649,15 @@ Oskari.clazz.define('Oskari.mapframework.bundle.printout.view.BasicPrintout',
         _printMap: function (selections, features) {
             var me = this,
                 sandbox = me.instance.getSandbox(),
-                url = sandbox.getAjaxUrl(),
-                urlBase = me.backendConfiguration.formatProducers[selections.format],
+                url = me.backendConfiguration.formatProducers[selections.format],
                 layoutArgs,
                 maplinkArgs = selections.maplinkArgs,
                 pageSizeArgs = '&pageSize=' + selections.pageSize,
                 pageTitleArgs = '&pageTitle=' + encodeURIComponent(selections.pageTitle),
                 saveFileArgs = '',
                 contentOptions = [],
-                p;
+                p,
+                municipalityCode = "&municipalityCode=" + me._getURLParameter('municipality');
 
             if (selections.saveFile) {
                 saveFileArgs = '&saveFile=' + selections.saveFile;
@@ -672,7 +672,7 @@ Oskari.clazz.define('Oskari.mapframework.bundle.printout.view.BasicPrintout',
             }
             var contentOptionArgs = contentOptions.join(''),
                 formatArgs = '&format=' + selections.format,
-                parameters = maplinkArgs + '&action_route=GetPreview' + pageSizeArgs + pageTitleArgs + contentOptionArgs + formatArgs + saveFileArgs + layoutArgs;
+                parameters = maplinkArgs + '&action_route=GetPreview' + pageSizeArgs + pageTitleArgs + contentOptionArgs + formatArgs + saveFileArgs + layoutArgs + municipalityCode;
 
             url = url + parameters;
 

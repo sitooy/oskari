@@ -820,8 +820,8 @@
     "conf": {
       "backendConfiguration": {
         "formatProducers": {
-          "application/pdf": "http://localhost:8080/oskari-printout-backend/imaging/service/thumbnail/maplink.pdf?",
-          "image/png": "http://localhost:8080/oskari-printout-backend/imaging/service/thumbnail/maplink.png?"
+          "application/pdf": "http://localhost/oskari-printout-backend/imaging/service/thumbnail/maplink.pdf?",
+          "image/png": "http://localhost/oskari-printout-backend/imaging/service/thumbnail/maplink.png?"
         }
       }
     }
